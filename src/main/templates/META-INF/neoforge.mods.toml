@@ -12,7 +12,7 @@ displayName="${mod_name}"
 
 displayURL="https://github.com/Starexify/BigSwordsR"
 issueTrackerURL="https://github.com/Starexify/BigSwordsR/issues"
-logoFile= "../../resources/big_swords_r_logo.png"
+logoFile= "../../resources/assets/hexxit_gear_weaponry/textures/item/scale_sword.png"
 #credits=""
 authors="${mod_authors}"
 description='''${mod_description}'''
