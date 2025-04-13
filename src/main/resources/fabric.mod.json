@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "hexxit_gear_weaponry",
+  "version": "${version}",
+  "name": "Hexxit Gear Weaponry",
+  "description": "Hexxit Gear Weaponry",
+  "authors": [
+    "ImVeryBad", "Foxirion"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Starexify/BigSwordsR/wiki",
+    "sources": "https://github.com/Starexify/BigSwordsR"
+  },
+  "license": "MIT",
+  "icon": "assets/hexxit_gear_weaponry/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.nova.hexxit_gear_weaponry.HexxitGearWeaponry"
+    ],
+    "client": [
+      "net.nova.hexxit_gear_weaponry.HGWClient"
+    ],
+    "fabric-datagen": [
+      "net.nova.hexxit_gear_weaponry.DataGenerators"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.13",
+    "hexxit_gear": ">=1.0.0",
+    "minecraft": "~1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
