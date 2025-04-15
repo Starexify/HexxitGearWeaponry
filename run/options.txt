@@ -42,8 +42,8 @@ directionalAudio:false
 touchscreen:false
 bobView:true
 toggleCrouch:false
-toggleSprint:false
-darkMojangStudiosBackground:false
+toggleSprint:true
+darkMojangStudiosBackground:true
 hideLightningFlashes:false
 hideSplashTexts:false
 mouseSensitivity:0.5
@@ -101,7 +101,7 @@ key_key.sneak:key.keyboard.left.shift
 key_key.sprint:key.keyboard.left.control
 key_key.drop:key.keyboard.q
 key_key.inventory:key.keyboard.e
-key_key.chat:key.keyboard.t
+key_key.chat:key.keyboard.enter
 key_key.playerlist:key.keyboard.tab
 key_key.pickItem:key.mouse.middle
 key_key.command:key.keyboard.slash
@@ -112,8 +112,8 @@ key_key.smoothCamera:key.keyboard.unknown
 key_key.fullscreen:key.keyboard.f11
 key_key.spectatorOutlines:key.keyboard.unknown
 key_key.swapOffhand:key.keyboard.f
-key_key.saveToolbarActivator:key.keyboard.c
-key_key.loadToolbarActivator:key.keyboard.x
+key_key.saveToolbarActivator:key.keyboard.unknown
+key_key.loadToolbarActivator:key.keyboard.unknown
 key_key.advancements:key.keyboard.l
 key_key.hotbar.1:key.keyboard.1
 key_key.hotbar.2:key.keyboard.2
