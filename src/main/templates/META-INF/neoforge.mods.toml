@@ -1,15 +1,10 @@
-modLoader="javafml"
-loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-
-# A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json"
-
 displayURL="https://github.com/Starexify/BigSwordsR"
 issueTrackerURL="https://github.com/Starexify/BigSwordsR/issues"
 logoFile= "../../resources/assets/hexxit_gear_weaponry/textures/item/scale_sword.png"
@@ -20,7 +15,7 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
-    versionRange="${neo_version_range}"
+    versionRange="[${neo_version},)"
     ordering="NONE"
     side="BOTH"
 
