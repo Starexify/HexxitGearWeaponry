@@ -12,7 +12,9 @@ tasks.named('wrapper', Wrapper).configure {
 version = mod_version
 group = mod_group_id
 
-repositories {}
+repositories {
+    maven { url = "https://api.modrinth.com/maven/" }
+}
 
 base {
 	archivesName = mod_id
@@ -69,7 +71,9 @@ configurations {
 	runtimeClasspath.extendsFrom localRuntime
 }
 
-dependencies {}
+dependencies {
+    implementation "maven.modrinth:hexxit-gear-r:${hgr_version}"
+}
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
@@ -81,7 +85,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_license            : mod_license,
             mod_version            : mod_version,
             mod_authors            : mod_authors,
-            mod_description        : mod_description
+            mod_description        : mod_description,
+            hgr_version            : hgr_version,
+            hgr_version_range      : hgr_version_range
     ]
     inputs.properties replaceProperties
     expand replaceProperties

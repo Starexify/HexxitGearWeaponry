@@ -6,9 +6,10 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import static net.nova.hexxit_gear_weaponry.HexxitGearWeaponry.MODID;
 
-@EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = MODID)
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent.Client event) {
+
     }
 }
