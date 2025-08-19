@@ -26,7 +26,7 @@ Each with different abilities while are used with their armor sets.
   <tbody>
     <tr>
       <td style="padding: 10px; text-align: left; border: none;"><strong>🗡️ Scale Sword</strong></td>
-      <td style="padding: 10px; text-align: left; border: none;">New giant sword that can block attacks, charge and than use the collected force to knock the enemies back</td>
+      <td style="padding: 10px; text-align: left; border: none;">New giant sword that can block attacks, charge and then use the collected force to knock the enemies back</td>
     </tr>
     <tr>
       <td style="padding: 10px; text-align: left; border: none;"><strong>💥️ Weapon Abilities</strong></td>
