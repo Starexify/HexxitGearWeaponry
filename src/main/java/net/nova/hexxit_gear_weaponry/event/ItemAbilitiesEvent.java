@@ -21,7 +21,6 @@ public class ItemAbilitiesEvent {
             if (sword.is(HGWItems.SCALE_SWORD)) {
                 var blockedHits = sword.get(HGWDataComponents.BLOCKED_HITS);
                 if (blockedHits != null && blockedHits != 4) sword.set(HGWDataComponents.BLOCKED_HITS, blockedHits + 1);
-                System.out.println(blockedHits);
             }
         }
     }

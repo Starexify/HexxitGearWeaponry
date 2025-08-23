@@ -52,7 +52,6 @@ public class ScaleSword extends Item {
         var blockedHits = stack.get(HGWDataComponents.BLOCKED_HITS);
         stack.set(HGWDataComponents.BLOCKED_HITS, 0);
         if (blockedHits >= 4) {
-            System.out.println(blockedHits);
             if (entity instanceof Player) {
                 Player player = (Player) entity;
                 player.getCooldowns().addCooldown(stack, ABILITY_COOLDOWN);
