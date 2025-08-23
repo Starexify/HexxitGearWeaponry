@@ -3,6 +3,7 @@ package net.nova.hexxit_gear_weaponry;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.nova.hexxit_gear_weaponry.init.HGWDataComponents;
 import net.nova.hexxit_gear_weaponry.init.HGWItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,7 @@ public class HexxitGearWeaponry {
     public static final Logger logger = LoggerFactory.getLogger(HexxitGearWeaponry.class);
 
     public HexxitGearWeaponry(IEventBus bus) {
+        HGWDataComponents.COMPONENTS.register(bus);
         HGWItems.ITEMS.register(bus);
     }
 

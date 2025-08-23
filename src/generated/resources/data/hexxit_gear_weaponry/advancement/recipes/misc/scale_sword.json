@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hexical_petal": {
+    "has_hexical_diamond": {
       "conditions": {
         "items": [
           {
-            "items": "hexxit_gear:hexical_petal"
+            "items": "hexxit_gear:hexical_diamond"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hexical_petal"
+      "has_hexical_diamond"
     ]
   ],
   "rewards": {

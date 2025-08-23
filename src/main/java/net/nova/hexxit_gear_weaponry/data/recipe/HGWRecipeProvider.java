@@ -20,7 +20,7 @@ public class HGWRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes() {
         // Scale Sword
-        shaped(RecipeCategory.MISC, HGWItems.SCALE_SWORD)
+        shaped(RecipeCategory.COMBAT, HGWItems.SCALE_SWORD)
                 .define('#', HGItems.HEXICAL_DIAMOND)
                 .define('S', Items.NETHERITE_SWORD)
                 .define('O', Blocks.OBSIDIAN)
@@ -28,7 +28,7 @@ public class HGWRecipeProvider extends RecipeProvider {
                 .pattern(" O#")
                 .pattern("G#O")
                 .pattern("SG ")
-                .unlockedBy(getHasName(HGItems.HEXICAL_PETAL), has(HGItems.HEXICAL_PETAL))
+                .unlockedBy(getHasName(HGItems.HEXICAL_DIAMOND), has(HGItems.HEXICAL_DIAMOND))
                 .save(output);
     }
 
