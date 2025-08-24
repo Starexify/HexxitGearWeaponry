@@ -52,8 +52,17 @@ public class ScaleSword extends Item {
         var blockedHits = stack.get(HGWDataComponents.BLOCKED_HITS);
         stack.set(HGWDataComponents.BLOCKED_HITS, 0);
         if (blockedHits >= 4) {
-            if (entity instanceof Player) {
-                Player player = (Player) entity;
+            if (entity instanceof Player player) {
+                List<LivingEntity> nearbyEntities = player.level().getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(5.0), livingEntity -> livingEntity != player);
+                for (LivingEntity nearbyEntity : nearbyEntities) {
+                    double dx = nearbyEntity.getX() - player.getX();
+                    double dz = nearbyEntity.getZ() - player.getZ();
+                    double distance = Math.sqrt(dx * dx + dz * dz);
+                    double pushFactor = Math.max(0, 2 - distance);
+
+                    nearbyEntity.push(dx / distance * pushFactor, 0.4, dz / distance * pushFactor);
+                }
+
                 player.getCooldowns().addCooldown(stack, ABILITY_COOLDOWN);
             }
         }
