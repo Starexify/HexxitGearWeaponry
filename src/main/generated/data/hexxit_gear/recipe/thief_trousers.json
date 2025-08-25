@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "hexxit_gear:hexical_diamond",
+    "L": "minecraft:leather",
+    "S": "minecraft:string"
+  },
+  "pattern": [
+    "LLL",
+    "S#S",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hexxit_gear:thief_trousers"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "hexxit_gear:thief"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "hexxit_gear:thief"
+      }
+    ]
+  }
+}

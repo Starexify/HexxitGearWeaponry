@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hexbiscus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hexxit_gear:hexbiscus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexxit_gear:hexical_petal_from_hexbiscus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hexbiscus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexxit_gear:hexical_petal_from_hexbiscus"
+    ]
+  }
+}

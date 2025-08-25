@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "hexxit_gear:hexical_diamond",
+    "I": "minecraft:iron_ingot",
+    "L": "minecraft:leather"
+  },
+  "pattern": [
+    "LLL",
+    "I#I",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hexxit_gear:tribal_leggings"
+  }
+}

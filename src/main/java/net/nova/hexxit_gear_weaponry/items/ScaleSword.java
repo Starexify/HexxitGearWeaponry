@@ -49,8 +49,6 @@ public class ScaleSword extends Item {
 
     @Override
     public boolean releaseUsing(ItemStack stack, Level level, LivingEntity entity, int i) {
-        return super.releaseUsing(stack, level, entity, i);
-
         var blockedHits = stack.get(HGWDataComponents.BLOCKED_HITS);
         stack.set(HGWDataComponents.BLOCKED_HITS, 0);
         if (blockedHits >= 4) {
@@ -68,5 +66,6 @@ public class ScaleSword extends Item {
                 player.getCooldowns().addCooldown(stack, ABILITY_COOLDOWN);
             }
         }
+        return super.releaseUsing(stack, level, entity, i);
     }
 }

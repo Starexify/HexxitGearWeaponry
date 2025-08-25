@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "hexxit_gear:hexical_diamond",
+    "O": "minecraft:obsidian"
+  },
+  "pattern": [
+    "O#O",
+    "O O"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hexxit_gear:scale_boots"
+  }
+}

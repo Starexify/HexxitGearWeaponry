@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hexxit_gear:item/tribal_tunic"
+  }
+}

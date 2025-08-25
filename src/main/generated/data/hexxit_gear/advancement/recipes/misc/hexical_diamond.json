@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hexical_petal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hexxit_gear:hexical_petal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexxit_gear:hexical_diamond"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hexical_petal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexxit_gear:hexical_diamond"
+    ]
+  }
+}
