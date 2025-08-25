@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/flower_pot_cross_emissive",
-  "textures": {
-    "cross_emissive": "hexxit_gear:block/hexbiscus_emissive",
-    "plant": "hexxit_gear:block/hexbiscus"
-  }
-}

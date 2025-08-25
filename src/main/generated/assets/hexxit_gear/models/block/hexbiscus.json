@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cross_emissive",
-  "textures": {
-    "cross": "hexxit_gear:block/hexbiscus",
-    "cross_emissive": "hexxit_gear:block/hexbiscus_emissive"
-  }
-}
