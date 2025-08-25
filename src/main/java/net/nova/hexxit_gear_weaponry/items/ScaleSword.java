@@ -11,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.BlocksAttacks;
+import net.minecraft.world.level.Level;
 import net.nova.hexxit_gear.item.ScaleArmor;
 import net.nova.hexxit_gear_weaponry.init.HGWDataComponents;
 import org.jetbrains.annotations.Nullable;
@@ -47,8 +48,9 @@ public class ScaleSword extends Item {
     }
 
     @Override
-    public void onStopUsing(ItemStack stack, LivingEntity entity, int count) {
-        super.onStopUsing(stack, entity, count);
+    public boolean releaseUsing(ItemStack stack, Level level, LivingEntity entity, int i) {
+        return super.releaseUsing(stack, level, entity, i);
+
         var blockedHits = stack.get(HGWDataComponents.BLOCKED_HITS);
         stack.set(HGWDataComponents.BLOCKED_HITS, 0);
         if (blockedHits >= 4) {

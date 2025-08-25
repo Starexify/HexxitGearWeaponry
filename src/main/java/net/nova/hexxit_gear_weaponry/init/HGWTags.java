@@ -1,5 +1,6 @@
 package net.nova.hexxit_gear_weaponry.init;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -18,10 +19,10 @@ public class HGWTags {
 
     // Registers
     public static TagKey<Block> blockTag(String name) {
-        return BlockTags.create(HexxitGearWeaponry.rl(name));
+        return TagKey.create(Registries.BLOCK, HexxitGearWeaponry.rl(name));
     }
 
     public static TagKey<Item> itemTag(String name) {
-        return ItemTags.create(HexxitGearWeaponry.rl(name));
+        return TagKey.create(Registries.ITEM, HexxitGearWeaponry.rl(name));
     }
 }

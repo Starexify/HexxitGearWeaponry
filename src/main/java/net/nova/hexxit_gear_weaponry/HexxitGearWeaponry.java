@@ -2,6 +2,7 @@ package net.nova.hexxit_gear_weaponry;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.ResourceLocation;
+import net.nova.hexxit_gear_weaponry.init.HGWDataComponents;
 import net.nova.hexxit_gear_weaponry.init.HGWItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +13,9 @@ public class HexxitGearWeaponry implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
+        HGWDataComponents.initialize();
+        HGWItems.initialize();
+        ItemAbilities.register();
     }
 
     // Util methods
