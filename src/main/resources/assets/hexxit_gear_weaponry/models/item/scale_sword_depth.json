@@ -13,8 +13,7 @@
         "east": {"uv": [6, 9.5, 6.5, 10], "texture": "#layer0"},
         "south": {"uv": [5, 9.5, 6.5, 10], "texture": "#layer0"},
         "west": {"uv": [5, 9.5, 5.5, 10], "texture": "#layer0"},
-        "up": {"uv": [5, 10, 6.5, 9.5], "texture": "#layer0"},
-        "down": {"uv": [21.5, 16, 20, 17], "texture": "#layer0"}
+        "up": {"uv": [5, 10, 6.5, 9.5], "texture": "#layer0"}
       }
     },
     {
@@ -39,7 +38,6 @@
         "east": {"uv": [6, 10.5, 6.5, 11], "texture": "#layer0"},
         "south": {"uv": [4.5, 10.5, 6.5, 11], "texture": "#layer0"},
         "west": {"uv": [4.5, 11, 5, 10.5], "texture": "#layer0"},
-        "up": {"uv": [21.5, 16, 20, 15], "texture": "#layer0"},
         "down": {"uv": [4.5, 10.5, 6.5, 11], "texture": "#layer0"}
       }
     },
@@ -52,7 +50,6 @@
         "east": {"uv": [5.5, 11, 6, 11.5], "texture": "#layer0"},
         "south": {"uv": [5, 11, 6, 11.5], "texture": "#layer0"},
         "west": {"uv": [5, 11, 5.5, 11.5], "texture": "#layer0"},
-        "up": {"uv": [21.5, 16, 20, 15], "texture": "#layer0"},
         "down": {"uv": [5.5, 11, 5, 11.5], "texture": "#layer0"}
       }
     },
@@ -65,7 +62,6 @@
         "east": {"uv": [5.5, 11.5, 6, 12], "texture": "#layer0"},
         "south": {"uv": [5.5, 11.5, 6, 12], "texture": "#layer0"},
         "west": {"uv": [5.5, 11.5, 6, 12], "texture": "#layer0"},
-        "up": {"uv": [21.5, 16, 20, 15], "texture": "#layer0"},
         "down": {"uv": [6, 11.5, 5.5, 12], "texture": "#layer0"}
       }
     },
@@ -78,8 +74,7 @@
         "east": {"uv": [6, 9.5, 6.5, 10], "texture": "#layer0"},
         "south": {"uv": [5.5, 11.5, 6, 11], "texture": "#layer0"},
         "west": {"uv": [5, 9.5, 5.5, 10], "texture": "#layer0"},
-        "up": {"uv": [5, 10, 6.5, 9.5], "texture": "#layer0"},
-        "down": {"uv": [21.5, 16, 20, 17], "texture": "#layer0"}
+        "up": {"uv": [5, 10, 6.5, 9.5], "texture": "#layer0"}
       }
     },
     {
@@ -91,8 +86,7 @@
         "east": {"uv": [6, 9.5, 6.5, 10], "texture": "#layer0"},
         "south": {"uv": [5.5, 11.5, 6, 11], "texture": "#layer0"},
         "west": {"uv": [5, 9.5, 5.5, 10], "texture": "#layer0"},
-        "up": {"uv": [5, 10, 6.5, 9.5], "texture": "#layer0"},
-        "down": {"uv": [21.5, 16, 20, 17], "texture": "#layer0"}
+        "up": {"uv": [5, 10, 6.5, 9.5], "texture": "#layer0"}
       }
     },
     {
@@ -230,47 +224,55 @@
     {
       "name": "scale_sword",
       "origin": [8, 8, 8],
+      "scope": 0,
       "color": 0,
       "children": [
         0,
         {
           "name": "details",
           "origin": [8, 8, 8],
+          "scope": 0,
           "color": 0,
           "children": [
             {
               "name": "d0",
               "origin": [8, 8, 8],
+              "scope": 0,
               "color": 0,
               "children": [1, 2, 3, 4, 5]
             },
             {
               "name": "d1",
               "origin": [8, 8, 8],
+              "scope": 0,
               "color": 0,
               "children": [6, 7]
             },
             {
               "name": "d2",
               "origin": [8, 8, 8],
+              "scope": 0,
               "color": 0,
               "children": [8, 9]
             },
             {
               "name": "d3",
               "origin": [8, 8, 8],
+              "scope": 0,
               "color": 0,
               "children": [10, 11]
             },
             {
               "name": "d4",
               "origin": [8, 8, 8],
+              "scope": 0,
               "color": 0,
               "children": [12, 13, 14]
             },
             {
               "name": "d5",
               "origin": [8, 8, 8],
+              "scope": 0,
               "color": 0,
               "children": [15, 16]
             }

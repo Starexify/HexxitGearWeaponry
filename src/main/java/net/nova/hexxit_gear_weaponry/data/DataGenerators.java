@@ -11,9 +11,9 @@ import static net.nova.hexxit_gear_weaponry.HexxitGearWeaponry.MODID;
 
 @EventBusSubscriber(modid = MODID)
 public class DataGenerators {
-    @SubscribeEvent
-    public static void gatherData(GatherDataEvent.Client event) {
-        event.createProvider(HGWRecipeProvider.Runner::new);
-        event.createBlockAndItemTags(HGWBlockTagsProvider::new, HGWItemTagsProvider::new);
-    }
+  @SubscribeEvent
+  public static void gatherData(GatherDataEvent.Client event) {
+    event.createProvider(HGWRecipeProvider.Runner::new);
+    event.createBlockAndItemTags(HGWBlockTagsProvider::new, HGWItemTagsProvider::new);
+  }
 }

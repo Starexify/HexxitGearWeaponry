@@ -20,7 +20,7 @@ public class HGWItemTagsProvider extends BlockTagCopyingItemTagProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ItemTags.SWORDS).add(HGWItems.SCALE_SWORD.get());
-        tag(HGWTags.ItemTag.SCALE_TOOL_MATERIALS).add(HGItems.HEXICAL_DIAMOND.get());
+        tag(ItemTags.SWORDS).add(HGWItems.SCALE_SWORD.getKey());
+        tag(HGWTags.ItemTag.SCALE_TOOL_MATERIALS).add(HGItems.HEXICAL_DIAMOND.getKey());
     }
 }
