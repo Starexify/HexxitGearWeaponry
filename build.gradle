@@ -1,82 +1,80 @@
 plugins {
-    id 'fabric-loom' version '1.11-SNAPSHOT'
-    id 'maven-publish'
+  id 'net.fabricmc.fabric-loom' version '1.17-SNAPSHOT'
+  id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
 
-base {
-    archivesName = project.mod_id
-}
-
 repositories {
-    maven {
-        name = "Terraformers"
-        url = "https://maven.terraformersmc.com/"
-    }
-    maven { url = "https://api.modrinth.com/maven/" }
+  maven { url = "https://api.modrinth.com/maven/" }
 }
 
 loom {
-    splitEnvironmentSourceSets()
-    mods {
-        "hexxit_gear" {
-            sourceSet sourceSets.main
-            sourceSet sourceSets.client
-        }
+  splitEnvironmentSourceSets()
+
+  runs {
+    client {}
+  }
+
+  mods {
+    "hexxit_gear_weaponry" {
+      sourceSet sourceSets.main
+      sourceSet sourceSets.client
     }
+  }
 }
 
 fabricApi {
-    configureDataGeneration {
-        client = true
-    }
+  configureDataGeneration {
+    client = true
+  }
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings loom.officialMojangMappings()
-    modImplementation "maven.modrinth:hexxit-gear-r:${hgr_version}"
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modCompileOnly modRuntimeOnly("com.terraformersmc:modmenu:${project.modmenu_version}")
+  minecraft "com.mojang:minecraft:${project.minecraft_version}"
+  implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+  implementation "maven.modrinth:hexxit-gear-r:${hgr_version}"
+
+  implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 }
 
 processResources {
-    inputs.property "version", project.version
+  def version = project.version
+  inputs.property "version", version
 
-    filesMatching("fabric.mod.json") {
-        expand "version": project.version
-    }
+  filesMatching("fabric.mod.json") {
+    expand "version": version
+  }
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.release = 21
+  it.options.release = 25
 }
 
 java {
-    withSourcesJar()
+  withSourcesJar()
 
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+  sourceCompatibility = JavaVersion.VERSION_25
+  targetCompatibility = JavaVersion.VERSION_25
 }
 
 jar {
-    from("LICENSE") {
-        rename { "${it}_${project.base.archivesName.get()}" }
-    }
+  def projectName = project.name
+  inputs.property "projectName", projectName
+
+  from("LICENSE") {
+    rename { "${it}_$projectName"}
+  }
 }
 
-
 publishing {
-    publications {
-        create("mavenJava", MavenPublication) {
-            artifactId = project.mod_id
-            from components.java
-        }
+  publications {
+    create("mavenJava", MavenPublication) {
+      from components.java
     }
+  }
 
-    repositories {
-    }
+  repositories {
+  }
 }

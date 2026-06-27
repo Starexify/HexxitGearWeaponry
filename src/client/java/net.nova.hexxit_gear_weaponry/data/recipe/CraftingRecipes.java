@@ -14,24 +14,24 @@ import net.nova.hexxit_gear.init.HGItems;
 import net.nova.hexxit_gear_weaponry.init.HGWItems;
 
 public class CraftingRecipes extends RecipeProvider {
-    public final HolderGetter<Item> itemLookup;
+  public final HolderGetter<Item> itemLookup;
 
-    protected CraftingRecipes(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
-        super(provider, recipeOutput);
-        itemLookup = registries.lookupOrThrow(Registries.ITEM);
-    }
+  protected CraftingRecipes(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
+    super(provider, recipeOutput);
+    itemLookup = registries.lookupOrThrow(Registries.ITEM);
+  }
 
-    @Override
-    public void buildRecipes() {
-        ShapedRecipeBuilder.shaped(itemLookup, RecipeCategory.COMBAT, HGWItems.SCALE_SWORD)
-                .define('#', HGItems.HEXICAL_DIAMOND)
-                .define('S', Items.NETHERITE_SWORD)
-                .define('O', Blocks.OBSIDIAN)
-                .define('G', Blocks.GOLD_BLOCK)
-                .pattern(" O#")
-                .pattern("G#O")
-                .pattern("SG ")
-                .unlockedBy(getHasName(HGItems.HEXICAL_DIAMOND), has(HGItems.HEXICAL_DIAMOND))
-                .save(output);
-    }
+  @Override
+  public void buildRecipes() {
+    ShapedRecipeBuilder.shaped(itemLookup, RecipeCategory.COMBAT, HGWItems.SCALE_SWORD.getFirst().value())
+        .define('#', HGItems.HEXICAL_DIAMOND.getFirst().value())
+        .define('S', Items.NETHERITE_SWORD)
+        .define('O', Blocks.OBSIDIAN)
+        .define('G', Blocks.GOLD_BLOCK)
+        .pattern(" O#")
+        .pattern("G#O")
+        .pattern("SG ")
+        .unlockedBy(getHasName(HGItems.HEXICAL_DIAMOND.getFirst().value()), has(HGItems.HEXICAL_DIAMOND.getFirst().value()))
+        .save(output);
+  }
 }

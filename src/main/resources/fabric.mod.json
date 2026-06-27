@@ -5,7 +5,8 @@
   "name": "Hexxit Gear Weaponry",
   "description": "Hexxit Gear Weaponry is an addon for the mod Hexxit Gear R, adding weapons for the four armors sets (Scale, Tribal, Thief and Sage). Each with different abilities while are used with their armor sets.",
   "authors": [
-    "ImVeryBad", "Foxirion"
+    "ImVeryBad",
+    "Foxirion"
   ],
   "contact": {
     "homepage": "https://github.com/Starexify/BigSwordsR/wiki",
@@ -26,10 +27,9 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.17.2",
-    "minecraft": "~1.21.8",
-    "java": ">=21",
-    "fabric-api": "*",
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
     "hexxit_gear": ">=1.0.0"
   }
 }
